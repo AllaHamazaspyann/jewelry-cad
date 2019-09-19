@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/slick.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/navigation-media.css">
+    <link rel="stylesheet" href="styles/sketch.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
+</head>
+<body>
+<nav id="menu-nav">
+    <a href="index.html" id="logo">
+        <img src="img/icons/logo.PNG" alt="logo">
+    </a>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a class="about" id="about-link">About us</a>
+        </li>
+        <li>
+            <a class="team">Our team</a>
+        </li>
+        <li id="services-li">
+            <a class="services">Services</a>
+            <img src="img/icons/plus-button.svg" id="services-more" alt="plus icon">
+            <ul class="unvisible-menu">
+                <li><a href="sketch.html">Sketch</a></li>
+                <li><a href="cad.html">CAD</a></li>
+                <li><a href="sculpting.html">Sculpting</a></li>
+                <li><a href="rendering.html">Rendering</a></li>
+                <li><a href="retouch.html">Retouch</a></li>
+                <li><a href="animation.html">Animation</a></li>
+            </ul>
+        </li>
+        <li><a class="faq">FAQ</a></li>
+        <li><a class="contact">Contact us</a></li>
+        <li>
+            <a href=""><img src="img/icons/facebook-letter-logo.svg" width="20"></a>
+        </li>
+    </ul>
+    <div id="nav-icon3" onclick="menuToggler(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+<div id="spacer">
+
+</div>
+<section>
+    <iframe id="video" frameborder="0" src="https://www.youtube.com/embed/hBmrO4w_kJc"></iframe>
+    <div id="slider-part">
+        <div class="header-icon">
+            <img src="img/icons/diamond.svg" width="30px" alt="diamonds">
+            <p>"Believe you can and you're halfway there"</p>
+            <i>Theodore Roosevelt</i>
+        </div>
+        <div class="wrapper">
+            <div class="item">
+                <img src="img/images/jewelry4.jpg" onclick="openModal();currentSlide(1)" alt="image">
+            </div>
+            <div class="item">
+                <img src="img/images/jewelry3.jpg" onclick="openModal();currentSlide(2)" alt="image">
+            </div>
+            <div class="item">
+                <img src="img/images/jewelry2.jpg" onclick="openModal();currentSlide(3)" alt="image">
+            </div>
+            <div class="item">
+                <img src="img/images/jewelry1.jpg" onclick="openModal();currentSlide(4)" alt="image">
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <img src="img/images/jewelry4.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/images/jewelry3.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/images/jewelry2.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/images/jewelry1.jpg">
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div id="wrapper">
+                <div class="column">
+                    <img class="demo cursor" src="img/images/jewelry4.jpg" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/images/jewelry3.jpg" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/images/jewelry2.jpg" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/images/jewelry1.jpg" onclick="currentSlide(4)">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="wrapper">
+        <div class="facebook item">
+            <a href=""><img src="img/icons/facebook-letter-logo.svg" width="20"></a>
+        </div>
+        <div class="item">
+            <a href="">info@jewelrycad.pro</a>
+            <a href="tel:+37498529288">+37498529288</a>
+        </div>
+        <div class="item">
+            <address>22a Marshal Baghramyan Ave., <span> Yerevan, 0019</span> <span> Armenia</span></address>
+        </div>
+    </div>
+    <div class="copyright">
+        ©2017 Algorithm Solutions
+    </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/sketch.js"></script>
+</body>
+</html>

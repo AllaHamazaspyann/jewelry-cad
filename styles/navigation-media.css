@@ -1,0 +1,109 @@
+@media (max-width: 900px) {
+    #nav-icon3{
+        display: block;
+        z-index: 99;
+    }
+    nav ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #000;
+        align-items: start;
+        padding: 0;
+        z-index: 99;
+        margin-top: 0;
+        padding-top: 60px;
+        transform: translate(-114%);
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+    }
+    nav ul li{
+        display: block;
+        font-size: 26px;
+        margin-bottom: 36px;
+        border-bottom: 1px solid #979292ba;
+        width: 92%;
+    }
+    #nav-icon3{
+        margin: unset;
+    }
+    #logo{
+        flex-basis: 30%;
+        min-width: 130px;
+    }
+    #logo img{
+        width: 100%;
+    }
+    #menu-nav{
+        position: unset;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+    /*class for toggling menu in mobile*/
+    .mobile-open{
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@media (max-width: 568px) {
+    #nav-icon3 span{
+        width: 80%;
+    }
+    nav ul li{
+        font-size: 18px;
+    }
+    #menu-nav{
+        padding: 0 20px;
+    }
+}
+@media (max-width: 992px) {
+    #menu-nav{
+        width: unset;
+    }
+    #spacer{
+        height: 0;
+    }
+    .unvisible-menu{
+        display: none;
+        position: relative;
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        transform: translate(0);
+        height: auto;
+    }
+    .unvisible-menu li{
+        border-bottom: 0;
+    }
+}
+@media (max-width: 1024px) {
+    #services-li img{
+        display: inline-block;
+        width: 20px;
+    }
+}
+@media (min-width: 768.99px) and (max-width: 1024px) {
+    #services-li img{
+        width: 14px;
+    }
+}
+@media (min-width: 901px) and (max-width: 992px) {
+    #menu-nav{
+        width: 100%;
+    }
+}
+@media (min-width: 993px) {
+    #services-li:hover .unvisible-menu{
+        display: block;
+    }
+}

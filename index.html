@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JewelryCAD</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/slick.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/navigation-media.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/homepage-media.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
+</head>
+<body>
+<nav id="menu-nav">
+    <a href="index.html" id="logo">
+        <img src="img/icons/logo.PNG" alt="logo">
+    </a>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a class="about" id="about-link">About us</a>
+        </li>
+        <li>
+            <a class="team">Our team</a>
+        </li>
+        <li id="services-li">
+            <a class="services">Services</a>
+            <img src="img/icons/plus-button.svg" id="services-more" alt="plus icon">
+            <ul class="unvisible-menu">
+                <li><a href="sketch.html">Sketch</a></li>
+                <li><a href="cad.html">CAD</a></li>
+                <li><a href="sculpting.html">Sculpting</a></li>
+                <li><a href="rendering.html">Rendering</a></li>
+                <li><a href="retouch.html">Retouch</a></li>
+                <li><a href="animation.html">Animation</a></li>
+            </ul>
+        </li>
+        <li><a class="faq">FAQ</a></li>
+        <li><a class="contact">Contact us</a></li>
+        <li>
+            <a href=""><img src="img/icons/facebook-letter-logo.svg" width="20"></a>
+        </li>
+    </ul>
+    <div id="nav-icon3" onclick="menuToggler(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+<header data-relative-input="true">
+    <div id="img-div">
+        <ul id="scene" data-friction-x="0.03" data-friction-y="0.05">
+            <li class="layer" id="specks" data-depth="0.1"></li>
+            <li class="layer" id="layer-1" data-depth="2">
+                <div class="img" id="img-1"></div>
+            </li>
+            <li class="layer" id="layer-2" data-depth="4">
+                <div class="img" id="img-2"></div>
+            </li>
+            <li class="layer" id="layer-3" data-depth="1.5">
+                <div class="img" id="img-3"></div>
+            </li>
+         </ul>
+    </div>
+    <div class="text-content">
+        <h1>JEWELRYCAD.PRO</h1>
+        <p>Something that explains who we are and what we do from the first sight</p>
+    </div>
+</header>
+<section id="about">
+    <div class="wrapper">
+        <div class="item text">
+            <h1>About us</h1>
+            <div>
+                <i>An Experienced 3D Animation Studio</i>
+            </div>
+            <p>Led by a team of passionate and talented artists and professionals, Jewelrycad.pro delivers innovative and dynamic animations to help bring our clients’ visions to life. We’re proud of our excellent track record of creating engaging and original animations through a combination of traditional techniques and modern technologies. Discover some of the projects we’ve worked on and see how our qualified and experienced 3D Animation Studio can take your project to the next level.</p>
+        </div>
+        <div class="item">
+            <img src="img/images/aboutus.PNG" alt="about us image">
+        </div>
+    </div>
+</section>
+<section id="team">
+    <h1>OUR TEAM</h1>
+    <!-- Slideshow container -->
+    <!--<div class="slideshow-container">-->
+
+        <!--&lt;!&ndash; Full-width images with number and caption text &ndash;&gt;-->
+
+        <!--&lt;!&ndash; Next and previous buttons &ndash;&gt;-->
+        <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>-->
+        <!--<a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+    <!--</div>-->
+    <br>
+
+    <!-- The dots/circles -->
+    <!--<div style="text-align:center">-->
+        <!--<span class="dot" onclick="currentSlide(1)"></span>-->
+        <!--<span class="dot" onclick="currentSlide(2)"></span>-->
+        <!--<span class="dot" onclick="currentSlide(3)"></span>-->
+    <!--</div>-->
+    <div class="slider">
+        <div class="mySlides fade">
+            <img src="img/images/team.jpg">
+            <div class="text-content">
+                <div class="name">
+                    Karen Yepremyan
+                </div>
+                <div class="title">
+                    <i>Founder :D</i>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img src="img/images/team3.jpg">
+            <div class="text-content">
+                <div class="name">
+                    Astghik Ohanjanyan
+                </div>
+                <div class="title">
+                    <i>Designer/Retoucher</i>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img src="img/images/team2.jpg">
+            <div class="text-content">
+                <div class="name">
+                    Grigor Divanyan
+                </div>
+                <div class="title">
+                    <i>CAD Specialist</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="services">
+    <h1>Services</h1>
+    <div class="wrapper">
+        <div class="item">
+            <img src="img/images/servicesketch.jpg" alt="">
+        </div>
+        <div class="item">
+            <h3>SKETCH</h3>
+            <p>This is your Project description. Whether your work is based on text, images, videos or a different medium, providing a brief summary will help visitors understand the context and background. Then use the media section to showcase your project!</p>
+        </div>
+        <div class="item">
+            <h3>CAD</h3>
+            <p>This is your Project description. Whether your work is based on text, images, videos or a different medium, providing a brief summary will help visitors understand the context and background. Then use the media section to showcase your project!</p>
+        </div>
+        <div class="item">
+            <img src="img/images/servicesketch.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="img/images/servicesketch.jpg" alt="">
+        </div>
+        <div class="item">
+            <h3>SCULPTING</h3>
+            <p>This is your Project description. Whether your work is based on text, images, videos or a different medium, providing a brief summary will help visitors understand the context and background. Then use the media section to showcase your project!</p>
+        </div>
+        <div class="item">
+            <h3>RENDERING</h3>
+            <p>This is your Project description. Whether your work is based on text, images, videos or a different medium, providing a brief summary will help visitors understand the context and background. Then use the media section to showcase your project!</p>
+        </div>
+        <div class="item">
+            <img src="img/images/servicesketch.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="img/images/servicesketch.jpg" alt="">
+        </div>
+        <div class="item">
+            <h3>RETOUCH</h3>
+            <p>This is your Project description. Whether your work is based on text, images, videos or a different medium, providing a brief summary will help visitors understand the context and background. Then use the media section to showcase your project!</p>
+        </div>
+        <div class="item">
+            <h3>ANIMATION</h3>
+            <p>This is your Project description. Whether your work is based on text, images, videos or a different medium, providing a brief summary will help visitors understand the context and background. Then use the media section to showcase your project!</p>
+        </div>
+        <div class="item">
+            <img src="img/images/servicesketch.jpg" alt="">
+        </div>
+    </div>
+</section>
+<section id="faq">
+    <h1>FAQ SECTION TITLE</h1>
+    <h2>HOW MUCH IS THE COST?</h2>
+    <p>Enter the Answer to Question here. Be thoughtful with your answer, write clearly, and consider adding examples. This can help your visitors get the help they need quickly and easily.</p>
+    <h2>HOW MUCH IS THE COST?</h2>
+    <p>Enter the Answer to Question here. Be thoughtful with your answer, write clearly, and consider adding examples. This can help your visitors get the help they need quickly and easily.</p>
+    <h2>HOW MUCH IS THE COST?</h2>
+    <p>Enter the Answer to Question here. Be thoughtful with your answer, write clearly, and consider adding examples. This can help your visitors get the help they need quickly and easily.</p>
+    <h2>HOW MUCH IS THE COST?</h2>
+    <p>Enter the Answer to Question here. Be thoughtful with your answer, write clearly, and consider adding examples. This can help your visitors get the help they need quickly and easily.</p>
+</section>
+<section id="contact">
+    <h1>Contact Us</h1>
+    <p>Thank you for your interest in our animation work and services. For any inquiries, commission requests, or studio visits, please contact us today and we’ll be happy to assist you.</p>
+    <form action="">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Message"></textarea>
+        <div>
+            <button type="submit">Send</button>
+        </div>
+        <div class="facebook">
+            <a href=""><img src="img/icons/facebook-letter-logo.svg" width="20"></a>
+        </div>
+    </form>
+
+</section>
+
+<footer>
+    <div class="wrapper">
+        <div class="facebook item">
+            <a href="">
+                <img src="img/icons/facebook-letter-logo.svg" width="20">
+            </a>
+        </div>
+        <div class="item">
+            <a href="">info@jewelrycad.pro</a>
+            <a href="tel:+37498529288">+37498529288</a>
+        </div>
+        <div class="item">
+            <address>22a Marshal Baghramyan Ave., <span> Yerevan, 0019</span> <span> Armenia</span></address>
+        </div>
+    </div>
+    <div class="copyright">
+        ©2017 Algorithm Solutions
+    </div>
+</footer>
+<script src="js/js/jquery-3.3.1.min.js"></script>
+<script src="js/js/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="js/parallaxProd.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(document).ready(function() {
+        var speed = 400;
+        var imgCount = $('.img').length;
+        
+              for (var i = 1; i <= imgCount; i++) {
+                $('#range').text(`1000px / ${speed/10}s`);
+                speed = speed * (i / 1.25);
+                $('#img-' + i).css({
+                  'animation-duration': speed + 's',
+                  'animation-name': 'float'
+                });
+              }
+           
+
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+
+        for (var i = 1; i < 6; i++) {
+            twinkleLoop(i);
+        }
+
+        function twinkleLoop(i) {
+            var duration = ((Math.random() * 5) + 3);
+
+            duration = duration - ((495 - speed)/100);
+            twinkle(i, duration);
+
+            setTimeout(function() {
+                twinkleLoop(i)
+            }, duration * 1000);
+        }
+
+        function twinkle(id, duration) {
+            var top = (Math.floor(Math.random() * 85) + 0) + '%';
+            var left = (Math.floor(Math.random() * 85) + 0) + '%';
+
+            $('#speck' + id).remove();
+            $('#specks').append("<div class='speck' id='speck" + id + "'></div>");
+            $('#speck' + id).css({
+                'top': top,
+                'left': left,
+                'animation-duration': duration + 's',
+                'animation-timing-function': 'cubic-bezier(0.250, 0.250, 0.750, 0.750)',
+                'animation-name': 'twinkle',
+            })
+        }
+    })
+</script>
+</body>
+</html>

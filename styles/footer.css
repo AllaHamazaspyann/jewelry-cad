@@ -1,0 +1,49 @@
+a{
+    color: #fff;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    padding-top: 100px;
+    border-top: 1px solid grey;
+    padding-bottom: 20px;
+}
+
+.wrapper{
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.item{
+    text-align: center;
+}
+.item a, .item span{
+    display: block;
+    margin-bottom: 12px;
+}
+.item span:nth-child(1){
+    margin-top: 12px;
+}
+.copyright {
+    margin: 20px auto 0;
+    max-width: 1300px;
+    text-align: center;
+    font-size: 12px;
+}
+@media (max-width: 768px) {
+    .item{
+        flex-basis: 100%;
+    }
+    footer{
+        padding-top: 16px;
+    }
+    #contact .facebook {
+        margin-top: 20px;
+    }
+    #contact{
+        padding-bottom: 20px;
+    }
+}
